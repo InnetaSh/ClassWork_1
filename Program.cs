@@ -62,3 +62,24 @@ Console.WriteLine($"a2 = {Difference_a2}");
 Console.WriteLine($"a1 = {Difference_a1}");
 
 
+//Даны цифры двух десятичных целых чисел: трехзначного a3a2a1 и двузначного b2b1, где a1 и b1 — число единиц, a2 и b2 — число десятков,
+//    a3 — число сотен. Получить цифры, составляющие разность этих чисел (известно, что это число трехзначное). Число-уменьшаемое,
+//    число-вычитаемое и число-разность не определять.
+
+
+Console.WriteLine("Enter the digits of a three-digit number1(a3a2a1)");
+int num2_1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the digits of a two-digit number2(b2b1)");
+int num2_2 = Convert.ToInt32(Console.ReadLine());
+
+int difference2 = (num2_1 - num2_2);
+Console.Write($"Difference2: {num2_1} - {num2_2} = {difference2}\n");
+int Difference2_a3 = difference2 / 100;
+int Difference2_a2 = difference2 / 10 % 10;
+int Difference2_a1 = difference2 % 10;
+Console.WriteLine($"a3 = {Difference2_a3}");
+Console.WriteLine($"a2 = {Difference2_a2}");
+Console.WriteLine($"a1 = {Difference2_a1}");
+
+
+
